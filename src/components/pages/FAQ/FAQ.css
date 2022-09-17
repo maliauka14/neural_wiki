@@ -1,0 +1,30 @@
+.faq {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.faq_title {
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+    padding: 20px;
+}
+
+.faq_subtitle {
+    margin: 0 auto;
+    text-align: center;
+    width: 600px;
+    font-size: 20px;
+}
+
+.faq_data_field {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.answers {
+    display: inline-block;
+    text-align: center;
+}
+

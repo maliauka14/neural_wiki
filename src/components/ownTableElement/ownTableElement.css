@@ -1,0 +1,22 @@
+.table_element {
+    border-bottom: .5px solid #30363d;
+    padding: 15px 0 10px 16px;
+}
+
+.own_table_title {
+    font-size: 20px;
+    padding-bottom: 12px;
+}
+
+
+.tags {
+    padding: 12px 0;
+}
+
+.tag {
+    background-color: #13233a;
+    color: #2589ff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin: 10px 8px 10px 0;
+}

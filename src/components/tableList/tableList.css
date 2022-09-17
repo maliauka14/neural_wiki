@@ -1,0 +1,92 @@
+.search_field {
+    margin: 24px;
+    position: relative;
+    border-bottom: .5px solid #30363d;
+}
+
+.search_field_input {
+    background-color: #0d1117;
+    width: 274px;
+    padding: 7px 12px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    border-radius: 6px;
+}
+
+.search_field_input:focus {
+    width: 400px;
+}
+
+
+.filter_button {
+    cursor: pointer;
+    width: 210px;
+    text-align: center;
+    padding: 6px 16px;
+    font-size: 14px;
+    font-weight: 500px;
+    line-height: 20px;
+    color: #c9d1d9;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    position: absolute;
+    right: 0;
+}
+
+
+.filter_field {
+    margin: 0 16px;
+    padding: 16px 0 32px 0;
+    border-bottom: .5px solid #30363d;
+}
+
+.filter_select {
+    background-color: #0d1117;
+    width: 274px;
+    padding: 7px 12px;
+    margin-right: 16px;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    border-radius: 6px;
+}
+
+::-webkit-input-placeholder {
+    color: #c9d1d9;
+}
+
+::-moz-placeholder {
+    color: #c9d1d9;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+    color: #c9d1d9;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+    color: #c9d1d9;
+}
+
+.filter_select_element {
+    padding: 2px;
+}
+
+.filter_select_element:hover {
+    background-color: #238636;
+}
+
+
+.data_field{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.data_counter{
+    padding: 20px 0;
+    border-bottom: .5px solid #30363d;
+    margin-bottom: 20px;
+}
