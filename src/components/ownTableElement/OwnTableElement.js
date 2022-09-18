@@ -14,7 +14,7 @@ const OwnTableElement = () => {
             </Link>
             <h4>Little bit description of some neural network Little bit description of some neural network </h4>
             <div className='tags'>
-                {arr.map(element => <span className='tag'>{element}</span>)}
+                {arr.map((element, index) => <span key={index} className='tag'>{element}</span>)}
             </div>
         </div>
     )

@@ -6,12 +6,12 @@ import Footer from '../footer/Footer';
 import OwnTableElement from "../ownTableElement/OwnTableElement";
 
 
-const TableList = () => {
+const TableList = ({ placeholderName, filters }) => {
 
     const [searchValue, setSearchValue] = useState('');
     const [usingFilters, setUsingFilters] = useState(false);
 
-    return ( 
+    return (
         <>
             <Header />
             <main>
@@ -21,7 +21,7 @@ const TableList = () => {
                         id="search_field_input"
                         className="search_field_input"
                         autoCapitalize="off"
-                        placeholder='Search neural network'
+                        placeholder={placeholderName}
                         autoCorrect="off"
                         value={searchValue}
                         onChange={e => setSearchValue(e.target.value)}
@@ -37,20 +37,20 @@ const TableList = () => {
                 {usingFilters &&
                     <section className='filter_field'>
                         <select className="filter_select">
-                            <option className="filter_select_element" disabled>This is a native select element</option>
-                            <option className="filter_select_element">Apples</option>
-                            <option className="filter_select_element">Bananas</option>
-                            <option className="filter_select_element">Grapes</option>
-                            <option className="filter_select_element">Oranges</option>
-                        </select>
-                        <select class="filter_select">
                             <option className="filter_select_element">This is a native select element</option>
                             <option className="filter_select_element">Apples</option>
                             <option className="filter_select_element">Bananas</option>
                             <option className="filter_select_element">Grapes</option>
                             <option className="filter_select_element">Oranges</option>
                         </select>
-                        <select class="filter_select">
+                        <select className="filter_select">
+                            <option className="filter_select_element">This is a native select element</option>
+                            <option className="filter_select_element">Apples</option>
+                            <option className="filter_select_element">Bananas</option>
+                            <option className="filter_select_element">Grapes</option>
+                            <option className="filter_select_element">Oranges</option>
+                        </select>
+                        <select className="filter_select">
                             <option className="filter_select_element">This is a native select element</option>
                             <option className="filter_select_element">Apples</option>
                             <option className="filter_select_element">Bananas</option>
@@ -61,22 +61,22 @@ const TableList = () => {
                     </section>}
 
                 <section className='data_field'>
-                    <h2 className="data_counter">{searchValue.trim() ? `Found 47 articles on your search: ${searchValue}` : 'You can show 47 neurals now'} </h2>
-                    <OwnTableElement/>
-                    <OwnTableElement/>
-                    <OwnTableElement/>
-                    <OwnTableElement/>
-                    <OwnTableElement/>
-                    <OwnTableElement/>
-                    <OwnTableElement/>
-                    <OwnTableElement/>
-                    <OwnTableElement/>
-                    <OwnTableElement/>
-                    <OwnTableElement/>
-                    <OwnTableElement/>
-                    <OwnTableElement/>
-                    <OwnTableElement/>
-                    <OwnTableElement/>
+                    <h2 className="data_counter">{searchValue.trim() ? `Found 47 articles on your search: ${searchValue}` : 'You can see 47 neurals now'} </h2>
+                    <OwnTableElement key={1} />
+                    <OwnTableElement key={2} />
+                    <OwnTableElement key={3} />
+                    <OwnTableElement key={4} />
+                    <OwnTableElement key={5} />
+                    <OwnTableElement key={6} />
+                    <OwnTableElement key={7} />
+                    <OwnTableElement key={8} />
+                    <OwnTableElement key={9} />
+                    <OwnTableElement key={10} />
+                    <OwnTableElement key={11} />
+                    <OwnTableElement key={12} />
+                    <OwnTableElement key={13} />
+                    <OwnTableElement key={14} />
+                    <OwnTableElement key={15} />
                 </section>
 
                 <section className='pagination_field'>

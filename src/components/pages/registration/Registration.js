@@ -61,7 +61,7 @@ const Registration = () => {
             </div>
             <div className='sign'>
                 Already have an account?
-                <Link exact to='/login' className='link'>
+                <Link exact='true' to='/login' className='link'>
                     Sign in
                 </Link>
             </div>

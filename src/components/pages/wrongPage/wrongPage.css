@@ -1,0 +1,31 @@
+.wrong_page_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrong_page_img{
+    width: 100px;
+    height: 100px;
+    margin-top: 200px;
+}
+
+.wrong_page_title{
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.wrong_page_subtitle{
+    width: 600px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wrong_page_redirect{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+}

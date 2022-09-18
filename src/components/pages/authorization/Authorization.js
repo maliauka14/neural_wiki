@@ -25,7 +25,7 @@ const Authorization = () => {
                 />
                 <div className='auth_password_helper_form'>
                     <p className='auth_helper_form'>Password</p>
-                    <Link exact to="password_reset" className='auth_helper_form link forgot_link'>Forgot password?</Link>
+                    <Link exact='true' to="password_reset" className='auth_helper_form link forgot_link'>Forgot password?</Link>
                 </div>
                 <input
                     type="password"
@@ -39,7 +39,7 @@ const Authorization = () => {
                 </button>
             </div>
             <div className='registration'>
-                New to NeuralWiki?  <Link exact to='/registration' className='
+                New to NeuralWiki?  <Link exact='true' to='/registration' className='
                 link'>Create an account</Link>
             </div>
         </section>

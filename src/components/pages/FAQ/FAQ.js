@@ -21,16 +21,16 @@ const FAQ = () => {
 
                     <div className='answers'>
                         <h2 className='faq_title'> Site navigation</h2>
-                        {data.siteNavigation.map(item =>
-                            <Accordion title={item.question} text={item.answer}
+                        {data.siteNavigation.map((item, index) =>
+                            <Accordion key={index} title={item.question} text={item.answer}
                             />
                         )}
                     </div>
 
                     <div className='answers'>
                         <h2 className='faq_title'> Placement of articles</h2>
-                        {data.placementOfArticles.map(item =>
-                            <Accordion title={item.question} text={item.answer}
+                        {data.placementOfArticles.map((item, index) =>
+                            <Accordion key={index} title={item.question} text={item.answer}
                             />
                         )}
                     </div>
